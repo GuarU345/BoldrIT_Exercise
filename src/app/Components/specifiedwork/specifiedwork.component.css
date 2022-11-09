@@ -1,0 +1,23 @@
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.card{
+  list-style: none;
+  width: 700px;
+  text-align: center;
+  height: 500px;
+  padding: 40px;
+  border-radius: 15px;
+}
+.footer{
+  position: relative;
+  height: 300px;
+}
+.url{
+  position: absolute;
+  bottom: 0;
+}

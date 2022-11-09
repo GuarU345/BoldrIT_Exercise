@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 style="color: white; text-align: center">Specified Work</h1>
+  <ul class="flex-container">
+    <div class="card">
+      <h3>Publisher</h3>
+      <li style="font-weight: bold; font-size: 1.5rem">
+        {{ dataspec.publisher }}
+      </li>
+      <li style="font-weight: bold;font-size:1.5rem">Author: {{data?data[0]?.family:"Not Specified"}}</li>
+      <br />
+      <li style="font-size: 1.5rem">
+        Title: "{{ dataspec["container-title"] }}"
+      </li><br>
+      <li style="font-size: 1.5rem;text-transform: capitalize;">Subject: {{ dataspec.subject }}</li><br>
+      <li style="font-size: 1.3rem">Volume: {{dataspec.volume?dataspec.volume:"Not Volume" }}</li>
+      <div class="footer">
+        <a href={{resource.URL}}><li class="url">{{ resource.URL }}</li></a>
+      </div>
+    </div>
+  </ul>
+</div>

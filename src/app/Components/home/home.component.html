@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="title">Works</h1>
+    <ul class="flex-container" *ngFor="let work of works">
+      <div [routerLink]="['/ws',work.DOI]" class="card">
+        <h3>Publisher</h3>
+        <li>{{work.publisher}}</li><br>
+        <h3>Title of Article</h3>
+        <li>{{work.title}}</li><br>
+        <h3>Type</h3>
+        <li>{{work.type}}</li>
+      </div>
+    </ul>
+</div>
